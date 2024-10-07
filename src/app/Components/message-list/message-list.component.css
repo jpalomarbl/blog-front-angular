@@ -1,0 +1,93 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* MAIN CONTAINER */
+div.main-container {
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HEADERS */
+div.main-container > h1 {
+    width: 20vw;
+
+    text-align: center;
+}
+
+/* TABLE */
+div.main-container > section.message-list > table {
+    width: 30vw;
+
+    margin: 5vh 0;
+
+    border-spacing: 0;
+}
+
+div.main-container > section.message-list > table > tr:nth-child(2n-1) {
+    background-color: rgb(216, 216, 216);
+}
+
+div.main-container > section.message-list > table > tr > td,
+div.main-container > section.message-list > table > tr > th {
+    padding: 1.5vh;
+
+    text-align: center;
+}
+
+/* BUTTONS */
+button {
+    font-weight: bold;
+    
+    cursor: pointer;
+}
+
+button.table-button {
+    width: 4vw;
+
+    padding: 1vh 0;
+    margin: 0 5px;
+
+    border-radius: 5px;
+}
+
+button.update {
+    background-color: rgb(191, 191, 255);
+
+    border-color: rgb(152, 152, 255);
+}
+
+button.update:hover {
+    background-color: rgb(152, 152, 255);
+}
+
+button.delete {
+    background-color: rgb(255, 168, 168);
+
+    border-color: rgb(255, 116, 116);
+}
+
+button.delete:hover {
+    background-color: rgb(255, 116, 116);
+}
+
+button.create {
+    width: 10vw;
+    font-size: 1.2rem;
+
+    padding: 1.5vh 0;
+
+    border-radius: 7.5px;
+    border-color: rgb(71, 255, 71);
+
+    background-color: rgb(139, 255, 139);
+}
+
+button.create:hover {
+    background-color: rgb(71, 255, 71);
+}
