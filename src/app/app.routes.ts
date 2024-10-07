@@ -8,7 +8,7 @@ export const routes: Routes = [
         component: MessageListComponent
     },
     {
-        path: '/:id',
+        path: 'message/:id',
         component: MessageFormComponent
     }
 ];
