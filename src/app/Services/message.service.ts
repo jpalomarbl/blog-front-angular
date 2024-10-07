@@ -26,6 +26,12 @@ export class MessageService {
       .toPromise() as Promise<MessageDTO>;
   }
 
+  createMessage(msg: MessageDTO): Promise<MessageDTO> {
+    return this.http
+      .post<MessageDTO>(this.urlMessageApi, msg)
+      .toPromise() as Promise<MessageDTO>;
+  }
+
   updateMessage(msgId: number, msg: MessageDTO): Promise<MessageDTO> {
     return this.http
       .put<MessageDTO>(this.urlMessageApi + '/' + msgId, msg)
