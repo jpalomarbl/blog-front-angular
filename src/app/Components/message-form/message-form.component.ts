@@ -85,7 +85,7 @@ export class MessageFormComponent {
     messageToast?.classList.remove('no-display');
 
     if (status) {
-      messageToast?.classList.add('success');
+      messageToast!.className = 'success';
 
       if (this.updateFlag) {
         messageToastText!.innerText = 'Congratulations, message updated!';
@@ -96,7 +96,7 @@ export class MessageFormComponent {
       await this.messageService.wait(1500);
       this.router.navigateByUrl('');
     } else {
-      messageToast?.classList.add('failiure');
+      messageToast!.className = 'failiure';
 
       if (this.updateFlag) {
         messageToastText!.innerText = 'Unable to update message.';
