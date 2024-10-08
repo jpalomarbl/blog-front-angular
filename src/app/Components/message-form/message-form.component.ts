@@ -63,7 +63,6 @@ export class MessageFormComponent {
         this.toastRedirect(formStatus && sendStatus);
       });
     }
-
   }
 
   private async prepareUpdateForm(): Promise<void> {
