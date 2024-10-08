@@ -1,0 +1,101 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* MAIN CONTAINER */
+div.main-container {
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HEADERS */
+div.main-container > h1 {
+    width: 20vw;
+
+    text-align: center;
+}
+
+/* FORM */
+div.main-container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 30vw;
+
+    margin: 5vh 0;
+    padding: 2vh 2vw;
+
+    background-color: rgb(216, 216, 216);
+
+    border-radius: 5px;
+}
+
+div.main-container > form > div {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    
+    margin: 2vh 0;
+}
+
+div.main-container > form > div > label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+div.main-container > form > button {
+    font-size: 1rem;
+    font-weight: bold;
+    
+    cursor: pointer;
+
+    width: 10vw;
+
+    padding: 1vh 0;
+
+    border-radius: 5px;
+    background-color: rgb(191, 191, 255);
+
+    border-color: rgb(152, 152, 255);
+}
+
+div.main-container > form > button:hover {
+    background-color: rgb(152, 152, 255);
+}
+
+/* MESSAGE TOAST */
+div#message-toast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: 7.5px;
+
+    width: 25vw;
+    padding: 2vw;
+}
+
+div#message-toast.no-display {
+    display: none;
+}
+
+div#message-toast.success {
+    border-color: rgb(71, 255, 71);
+
+    background-color: rgb(139, 255, 139);
+}
+
+div#message-toast.failiure {
+    border-color: rgb(255, 116, 116);
+
+    background-color: rgb(255, 168, 168);
+}
